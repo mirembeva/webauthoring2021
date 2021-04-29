@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body bgcolor="grey">
+    
+    <form action="register.php" method="POST">
+        <h1>Registration Form</h1>
+
+        <!-- inserting a fieldset / boundary -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- inserting a textbox -->
+            <label>First Name </label><input type="text" name="firstname" placeholder="First Name" size="50"><br><br>
+    
+            <!-- inserting a dropdown menu -->
+            <label>Select your course</label>
+            <select name="course" id="course">
+            
+                <option value="Dipcs">Diploma  CS</option>
+                <option value="BSCIT">Bachelors of IT</option>
+                <option value="CS">Bachelors of Computer Science</option>
+                <option value="" selected>Course</option>
+            </select>
+
+            <P>Gender :</P>
+            <label> Female</label><input type="radio" name="gender" value="female">
+            <label>Male</label><input type="radio" name="gender" value="male"><br><br>
+        </fieldset><br><br>
+        
+        
+        <fieldset>
+            <legend>other information</legend>
+            <textarea name="address" id="address" cols="100" rows="5">type your address here</textarea><br>
+            <label>Email</label><input type="email" name="email"><br>
+            <label>Password</label><input type="password" name="password"><br>
+            <label for="">Pick your color</label><input type="color" name="color"><br>
+            <label for="">Select your age</label><input type="number" name="age"><br>
+            <Label>Select your friends</Label><br>
+            <input type="checkbox" name="firstfriend" value="yes"><label for="">Alfred</label><br>
+            <input type="checkbox" name="secondfriend" value="yes"><label>Sheba</label><br>
+            <input type="checkbox" name="thirdfriend" value="yes"><label>Borris</label><br>
+            
+
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel">
+        
+        </fieldset>
+    </form>
+</body>
+</html>
